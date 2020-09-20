@@ -12,8 +12,8 @@ Next, [clone this repo](https://github.com/Cornell-Tech-Turtlebot/DINAMIXEL_OPEN
 
 - The servo id parameter lets the OpenCR board know which servos are which in Dynamixel's daisy chain configuraion. You may change motor IDs by modifying these lines in the c_ID_Change.ino file: 
 
-#define DXL_ID  1
-#define NEW_DXL_ID  15
+  #define DXL_ID  1<br>
+  #define NEW_DXL_ID  15<br>
 
 This file assumes that the servo's baud rate is still as set at factory (57600). This line may be changed as necessary to get the right baud rate passed to the OpenCR board:
 
