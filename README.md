@@ -6,9 +6,17 @@ However, these files are included for future reference.
 
 # Using the Repo
 
-To program the servos, the [Arduino IDE](https://emanual.robotis.com/docs/en/software/arduino_ide/) needs to be installed, along with the OpenCR Library for Arduino.
+To program the servos, the [Arduino IDE] (https://emanual.robotis.com/docs/en/software/arduino_ide/) needs to be installed, along with the OpenCR Library for Arduino.
 
 Next, [clone this repo](https://github.com/Cornell-Tech-Turtlebot/DINAMIXEL_OPEN_MANIPULATOR_CONFIGURATION) to a local directory. (i.e.: using command line: git clone https://github.com/Cornell-Tech-Turtlebot/DINAMIXEL_OPEN_MANIPULATOR_CONFIGURATION.git)
 
+-The servo id parameter lets the OpenCR board know which servos are which in Dynamixel's daisy chain configuraion. You may change motor IDs by modifying these lines in the c_ID_Change.ino file: 
 
+#define DXL_ID  1
+#define NEW_DXL_ID  15
 
+This file assumes that the servo's baud rate is still as set at factory (57600). This line may be changed as necessary to get the right baud rate passed to the OpenCR board:
+
+#define BAUDRATE  57600
+
+- You may change the baud rate by using the the d_BPS_Change.ino file and changing this line:  #define NEW_BAUDRATE 1000000. This file assumes that the Dynamixel servos are in their factory state (i.e. baud rate is 57600). This line specifies the servo ID for the servo being programmed: "#define DXL_ID 15".
