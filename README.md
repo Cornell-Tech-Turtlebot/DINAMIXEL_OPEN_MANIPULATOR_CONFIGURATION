@@ -10,7 +10,7 @@ To program the servos, the [Arduino IDE] (https://emanual.robotis.com/docs/en/so
 
 Next, [clone this repo](https://github.com/Cornell-Tech-Turtlebot/DINAMIXEL_OPEN_MANIPULATOR_CONFIGURATION) to a local directory. (i.e.: using command line: git clone https://github.com/Cornell-Tech-Turtlebot/DINAMIXEL_OPEN_MANIPULATOR_CONFIGURATION.git)
 
--The servo id parameter lets the OpenCR board know which servos are which in Dynamixel's daisy chain configuraion. You may change motor IDs by modifying these lines in the c_ID_Change.ino file: 
+- The servo id parameter lets the OpenCR board know which servos are which in Dynamixel's daisy chain configuraion. You may change motor IDs by modifying these lines in the c_ID_Change.ino file: 
 
 #define DXL_ID  1
 #define NEW_DXL_ID  15
